@@ -7,9 +7,10 @@
 //   $ clang main.cpp -framework OpenGL -framework GLUT -Wno-deprecated-declarations -o demo
 #include <GLUT/glut.h>
 
-#elif __LINUX__
-// Untested
-#include <GLUT/glut.h>
+#elif __linux__
+#include <GL/glut.h>
+// compiled on Ubuntu with
+//  $ g++ main.cpp -lGL -lGLU -lglut  -o   test
 #endif
 
 
